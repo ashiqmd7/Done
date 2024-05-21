@@ -23,11 +23,6 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      # Optional: Build your project here, customize according to your build system, e.g., Maven, Gradle, etc.
-      - name: Build with Maven
-        run: mvn clean install
-        # If not using Maven, replace the above line with your build command
-
       - name: Official SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v2.0.2
         env:
